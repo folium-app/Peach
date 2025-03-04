@@ -38,7 +38,7 @@
     return NES::Emulator::HEIGHT;
 }
 
--(void) button:(uint8_t)button player:(int)player pressed:(BOOL)pressed; {
+-(void) button:(uint8_t)button player:(int)player pressed:(BOOL)pressed {
     if (pressed)
         emulator->get_controller(0)[0] |= button;
     else
